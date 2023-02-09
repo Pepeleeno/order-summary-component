@@ -1,0 +1,209 @@
+body {
+  background-image: url('/images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  background-color: #E0E8FF;
+  padding-top: 102px;
+  padding-bottom: 102px;
+  margin: 0;
+}
+
+main {
+  width: 450px;
+  height: 697px;
+  margin: auto;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.image-holder img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-bottom: 0;
+}
+
+.title {
+  text-align: center;
+  font-family: Red hat display;
+  font-weight: 900;
+  font-size: 28px;
+  margin-top: 45px;
+  margin-bottom: 17px;
+  color: #1F2E55;
+}
+
+.title-description {
+  text-align: center;
+  font-family: Red hat display;
+  font-size: 16px;
+  margin-left: 48px;
+  margin-right: 48px;
+  color: #717FA6;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 354px;
+  height: 98px;
+  margin-right: 48px;
+  margin-left: 48px;
+  background-color: #F7F9FF;
+  border-radius: 11px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon img {
+  height: 48px;
+  width: 48px;
+  margin-right: 20px;
+  padding-left: 24px;
+}
+
+.plan :nth-child(1) {
+  font-family: Red hat display;
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+
+.plan :nth-child(2) {
+  font-family: Red hat display;
+  color: #717FA6;
+  margin-top: 6px;
+}
+
+.change {
+  font-family: Red hat display;
+  color: #382AE1;
+  text-decoration: underline;
+  padding-right: 24px;
+  cursor: pointer;
+}
+
+
+.btn-proceed {
+  display: block;
+  margin: auto;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  height: 50px;
+  width: 354px;
+  color: white;
+  background-color: #382AE1;
+  font-family: Red hat display;
+  font-size: 15px;
+  font-weight: 900;
+  border: none;
+  border-radius: 11px;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.19);
+  transition: background-color, box-shadow 0.15s;
+  cursor: pointer;
+}
+
+.btn-proceed:hover {
+  background-color: #766CF1;
+  box-shadow: none;
+}
+
+.btn-cancel {
+  display: block;
+  margin: auto;
+  background-color: white;
+  color: #717FA6;
+  border: none;
+  font-family: Red hat display;
+  font-weight: 900;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.btn-cancel:hover {
+  color: #1F2E55;
+}
+
+footer {
+  position: relative;
+}
+
+footer p {
+  left: 700px;
+  position: absolute;
+  font-family: red hat display;
+  margin: auto;
+  padding-top: 10px;
+}
+
+span {
+  color: #766CF1;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-image: url('/images/pattern-background-mobile.svg');
+    margin: 0;
+  }
+
+  main {
+    width: 327px;
+    height: 567px;
+    margin: auto;
+    margin-top: 71px;
+    margin-bottom: 71px;
+  }
+
+  .image-holder img {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-bottom: 0;
+    height: 160px;
+    width: 327px;
+  }
+
+  .title-description {
+    font-size: 15px;
+    line-height: 25px;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .price {
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 247px;
+    height: 48px;
+  }
+
+  .plan :nth-child(1) {
+    font-size: 14px;
+  }
+  
+  .plan :nth-child(2) {
+    font-size: 14px;
+  }
+
+  .change {
+    font-size: 13px;
+    padding-right: 0;
+  }
+
+  .icon img {
+    padding-left: 0px;
+  }
+
+  .btn-proceed {
+    width: 279px;
+    height: 50px;
+  }
+
+}
